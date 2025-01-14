@@ -11,15 +11,11 @@ extern "C" {
 #include <string.h>
 
 #define HTTP_PORT    80
-//#define HTTP_GET     "GET"
-//#define HTTP_POST    "POST"
 #ifdef DEBUG
 #define DPRINT(fmt, ...) fprintf(stderr, "[DEBUG] " fmt "\n" ##__VA_ARGS__)
 #else
 #define DPRINT(fmt, ...) ()
 #endif
-
-typedef uint16_t port_t;
 
 typedef enum {
 	HTTP_GET, 
